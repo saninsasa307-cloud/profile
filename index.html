@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Профиль Александра (Omno) — программирование, фотография, рэп.">
+  <title>Александр — Профиль пользователя</title>
+
+  <!-- Шрифты с поддержкой кириллицы -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzhiNWNmNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNiIgc3RvcC1jb2xvcj0iI2ZmM2Q4MSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjlhM2QiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciIGN4PSIwLjMiIGN5PSIwLjI1IiByPSIwLjgiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4zNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9InVybCgjYmcpIi8+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9InVybCgjZ2xvdykiLz4KICA8IS0tINC30LLRg9C60L7QstCw0Y8g0LLQvtC70L3QsCAtLT4KICA8ZyBmaWxsPSIjMGEwYTEyIiBvcGFjaXR5PSIwLjE4Ij4KICAgIDxyZWN0IHg9IjE4IiAgeT0iODgiICB3aWR0aD0iOCIgaGVpZ2h0PSIyNCIgcng9IjQiLz4KICAgIDxyZWN0IHg9IjMyIiAgeT0iNzQiICB3aWR0aD0iOCIgaGVpZ2h0PSI1MiIgcng9IjQiLz4KICAgIDxyZWN0IHg9IjE2MCIgeT0iNzQiICB3aWR0aD0iOCIgaGVpZ2h0PSI1MiIgcng9IjQiLz4KICAgIDxyZWN0IHg9IjE3NCIgeT0iODgiICB3aWR0aD0iOCIgaGVpZ2h0PSIyNCIgcng9IjQiLz4KICA8L2c+CiAgPCEtLSDQvNC+0L3QvtCz0YDQsNC80LzQsCBPICsg0LzQuNC60YDQvtGE0L7QvSAtLT4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjUwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwYTBhMTIiIHN0cm9rZS13aWR0aD0iMTYiLz4KICA8cmVjdCB4PSI4OCIgeT0iNzIiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0MCIgcng9IjEyIiBmaWxsPSIjYzZmZjNkIi8+CiAgPHBhdGggZD0iTTgwIDEwNCBhMjAgMjAgMCAwIDAgNDAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzZmZjNkIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxyZWN0IHg9Ijk3IiB5PSIxMjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjEyIiByeD0iMyIgZmlsbD0iI2M2ZmYzZCIvPgo8L3N2Zz4K" type="image/svg+xml">
+  <style>
+/* =========================================================
+   Профиль пользователя Omno
+   Вся раскладка сделана на Flexbox (display: flex)
+   ========================================================= */
+
+/* ---------- Переменные: цвета, радиусы, тени ---------- */
+:root {
+  --bg: #0a0a12;
+  --surface: rgba(22, 22, 36, 0.72);
+  --surface-2: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.09);
+  --text: #f2f2f7;
+  --muted: #9a9ab0;
+
+  --lime: #c6ff3d;
+  --violet: #8b5cf6;
+  --pink: #ff3d81;
+  --cyan: #22d3ee;
+
+  --grad: linear-gradient(135deg, var(--violet) 0%, var(--pink) 55%, #ff9a3d 100%);
+
+  --radius-lg: 28px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+
+  --shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  --font-display: "Unbounded", "Arial Black", sans-serif;
+  --font-body: "Manrope", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- Сброс и база ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Flexbox: шапка, main и подвал выстраиваются в колонку,
+     подвал прижат к низу экрана */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 32px;
+  padding: 40px 20px 0;
+
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---------- Декоративный фон ---------- */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0) 0 0 / 28px 28px;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.55;
+  animation: float 18s ease-in-out infinite alternate;
+}
+
+.blob--violet {
+  width: 520px; height: 520px;
+  top: -160px; left: -120px;
+  background: var(--violet);
+}
+
+.blob--lime {
+  width: 380px; height: 380px;
+  bottom: -140px; right: -80px;
+  background: var(--lime);
+  opacity: 0.25;
+  animation-delay: -6s;
+}
+
+.blob--pink {
+  width: 420px; height: 420px;
+  top: 30%; right: 20%;
+  background: var(--pink);
+  opacity: 0.3;
+  animation-delay: -12s;
+}
+
+@keyframes float {
+  to { transform: translate(60px, 40px) scale(1.1); }
+}
+
+/* =========================================================
+   ШАПКА
+   ========================================================= */
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.header__inner {
+  /* Flexbox: аватар слева, текст справа */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 40px 48px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Градиентная полоса сверху шапки */
+.header__inner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--grad);
+}
+
+/* ---------- Аватар с вращающимся кольцом ---------- */
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+}
+
+.avatar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(var(--lime), var(--violet), var(--pink), var(--lime));
+  animation: spin 6s linear infinite;
+}
+
+.avatar__img {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid var(--bg);
+  display: block;
+  object-fit: cover;
+}
+
+.avatar__online {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 22px;
+  height: 22px;
+  background: var(--lime);
+  border: 4px solid var(--bg);
+  border-radius: 50%;
+  box-shadow: 0 0 16px var(--lime);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ---------- Текст шапки ---------- */
+.header__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.header__label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+.header__name {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 7vw, 76px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #fff 0%, #fff 40%, var(--pink) 75%, var(--violet) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  word-break: break-word;
+}
+
+.header__status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 18px 8px 14px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+/* ---------- Мини-эквалайзер (отсылка к рэпу) ---------- */
+.eq {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 16px;
+}
+
+.eq i {
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: var(--lime);
+  border-radius: 2px;
+  animation: eq 1s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+.eq i:nth-child(2) { animation-delay: -0.3s; }
+.eq i:nth-child(3) { animation-delay: -0.6s; }
+.eq i:nth-child(4) { animation-delay: -0.15s; }
+
+@keyframes eq {
+  0%, 100% { transform: scaleY(0.3); }
+  50%      { transform: scaleY(1); }
+}
+
+/* ---------- Счётчики ---------- */
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: auto; /* счётчики прижаты к правому краю шапки */
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  padding: 12px 20px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.stats__item b {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.stats__item span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* =========================================================
+   MAIN: две карточки рядом
+   ========================================================= */
+.main {
+  /* Flexbox: две секции в ряд, на узком экране — друг под другом */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 32px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 1 420px;
+  padding: 36px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(198, 255, 61, 0.25);
+}
+
+/* Разные фоновые оттенки, чтобы визуально разделить блоки */
+.profile-info {
+  background:
+    linear-gradient(160deg, rgba(139, 92, 246, 0.18), transparent 60%),
+    var(--surface);
+}
+
+.profile-edit {
+  flex-grow: 1.3;
+  background:
+    linear-gradient(200deg, rgba(198, 255, 61, 0.09), transparent 55%),
+    var(--surface);
+}
+
+.card__title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.card__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  font-size: 14px;
+  color: var(--bg);
+  background: var(--lime);
+  border-radius: var(--radius-sm);
+}
+
+/* ---------- Список «Обо мне» ---------- */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-list__item {
+  /* Flexbox: иконка — ключ — значение в одну строку */
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: background 0.2s ease;
+}
+
+.info-list__item:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.info-list__item--column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-list__row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.info-list__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+}
+
+.info-list__key {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.info-list__value {
+  margin-left: auto; /* значение прижато вправо */
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+}
+
+/* ---------- Теги хобби ---------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid;
+  transition: transform 0.2s ease;
+}
+
+.tag:hover {
+  transform: translateY(-2px) rotate(-1deg);
+}
+
+.tag--code  { color: var(--cyan);  border-color: rgba(34, 211, 238, 0.4);  background: rgba(34, 211, 238, 0.08); }
+.tag--photo { color: #ffb86b;      border-color: rgba(255, 184, 107, 0.4); background: rgba(255, 184, 107, 0.08); }
+.tag--rap   { color: var(--lime);  border-color: rgba(198, 255, 61, 0.45); background: rgba(198, 255, 61, 0.1); }
+
+/* ---------- Блок «Пару слов» ---------- */
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px;
+  border-left: 4px solid var(--pink);
+  background: rgba(255, 61, 129, 0.07);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.bio__title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--pink);
+}
+
+.bio__text {
+  color: #d8d8e4;
+}
+
+/* =========================================================
+   ФОРМА
+   ========================================================= */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form__row {
+  /* Flexbox: два поля в одной строке */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1 1 200px;
+}
+
+.field--small {
+  flex: 0 1 140px;
+}
+
+.field__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.field__label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.field__counter {
+  font-size: 12px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Поля ввода */
+.field__input {
+  width: 100%;
+  padding: 14px 16px;
+  font: inherit;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.field__input::placeholder {
+  color: #5f5f75;
+}
+
+.field__input:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.field__input:focus {
+  border-color: var(--lime);
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 4px rgba(198, 255, 61, 0.15);
+}
+
+.field__input:invalid:not(:placeholder-shown) {
+  border-color: var(--pink);
+}
+
+.field__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Выпадающий список со своей стрелкой */
+.field__select-wrap {
+  display: flex;
+  position: relative;
+}
+
+.field__select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--lime);
+  border-bottom: 2px solid var(--lime);
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
+
+.field__select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 44px;
+  cursor: pointer;
+}
+
+.field__select option {
+  background: #16162a;
+  color: var(--text);
+}
+
+/* Убираем стрелки у поля с числом */
+.field__input[type="number"]::-webkit-inner-spin-button,
+.field__input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.field__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ---------- Кнопки ---------- */
+.form__actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px 28px;
+  font: inherit;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--primary {
+  color: var(--bg);
+  background: var(--lime);
+  box-shadow: 0 10px 30px -10px rgba(198, 255, 61, 0.7);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px -10px rgba(198, 255, 61, 0.9);
+}
+
+.btn--ghost {
+  color: var(--text);
+  background: transparent;
+  border-color: var(--border);
+}
+
+.btn--ghost:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: var(--surface-2);
+}
+
+.btn:focus-visible,
+.footer__link:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   ПОДВАЛ
+   ========================================================= */
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto; /* прижимает подвал к низу */
+  padding: 28px 20px;
+  border-top: 1px solid var(--border);
+  background: rgba(10, 10, 18, 0.7);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.footer__copy {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__link {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: var(--lime);
+  border-color: var(--lime);
+}
+
+/* =========================================================
+   Уведомление «Профиль обновлён»
+   ========================================================= */
+.toast {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  padding: 14px 24px;
+  font-weight: 700;
+  color: var(--bg);
+  background: var(--lime);
+  border-radius: 999px;
+  box-shadow: 0 20px 40px -10px rgba(198, 255, 61, 0.6);
+  transform: translate(-50%, 140%);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(.2, 1.4, .4, 1), opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.toast.is-visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+/* Подсветка обновлённых значений */
+.flash {
+  animation: flash 1s ease;
+}
+
+@keyframes flash {
+  0%   { color: var(--lime); text-shadow: 0 0 18px var(--lime); }
+  100% { text-shadow: none; }
+}
+
+/* =========================================================
+   АДАПТИВ
+   ========================================================= */
+@media (max-width: 760px) {
+  body {
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .header__inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 24px;
+    gap: 24px;
+  }
+
+  .header__text {
+    align-items: center;
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .stats__item {
+    min-width: 84px;
+    padding: 10px 14px;
+  }
+
+  .card {
+    padding: 26px 20px;
+    flex-basis: 100%;
+  }
+
+  .main {
+    gap: 20px;
+  }
+
+  .form__actions {
+    flex-direction: column-reverse;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Для тех, у кого отключены анимации в системе */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <!-- Декоративный фон: светящиеся пятна -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob blob--violet"></span>
+    <span class="blob blob--lime"></span>
+    <span class="blob blob--pink"></span>
+  </div>
+
+  <!-- ===================== ШАПКА ПРОФИЛЯ ===================== -->
+  <header class="header">
+    <div class="header__inner">
+
+      <div class="avatar">
+        <img class="avatar__img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzhiNWNmNiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuNiIgc3RvcC1jb2xvcj0iI2ZmM2Q4MSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjlhM2QiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb3ciIGN4PSIwLjMiIGN5PSIwLjI1IiByPSIwLjgiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4zNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9InVybCgjYmcpIi8+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9InVybCgjZ2xvdykiLz4KICA8IS0tINC30LLRg9C60L7QstCw0Y8g0LLQvtC70L3QsCAtLT4KICA8ZyBmaWxsPSIjMGEwYTEyIiBvcGFjaXR5PSIwLjE4Ij4KICAgIDxyZWN0IHg9IjE4IiAgeT0iODgiICB3aWR0aD0iOCIgaGVpZ2h0PSIyNCIgcng9IjQiLz4KICAgIDxyZWN0IHg9IjMyIiAgeT0iNzQiICB3aWR0aD0iOCIgaGVpZ2h0PSI1MiIgcng9IjQiLz4KICAgIDxyZWN0IHg9IjE2MCIgeT0iNzQiICB3aWR0aD0iOCIgaGVpZ2h0PSI1MiIgcng9IjQiLz4KICAgIDxyZWN0IHg9IjE3NCIgeT0iODgiICB3aWR0aD0iOCIgaGVpZ2h0PSIyNCIgcng9IjQiLz4KICA8L2c+CiAgPCEtLSDQvNC+0L3QvtCz0YDQsNC80LzQsCBPICsg0LzQuNC60YDQvtGE0L7QvSAtLT4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjUwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwYTBhMTIiIHN0cm9rZS13aWR0aD0iMTYiLz4KICA8cmVjdCB4PSI4OCIgeT0iNzIiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0MCIgcng9IjEyIiBmaWxsPSIjYzZmZjNkIi8+CiAgPHBhdGggZD0iTTgwIDEwNCBhMjAgMjAgMCAwIDAgNDAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzZmZjNkIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxyZWN0IHg9Ijk3IiB5PSIxMjQiIHdpZHRoPSI2IiBoZWlnaHQ9IjEyIiByeD0iMyIgZmlsbD0iI2M2ZmYzZCIvPgo8L3N2Zz4K" alt="Аватар пользователя Александр" width="160" height="160">
+        <span class="avatar__online" title="В сети"></span>
+      </div>
+
+      <div class="header__text">
+        <p class="header__label">Профиль пользователя</p>
+        <h1 class="header__name" id="view-name">Александр</h1>
+        <p class="header__status">
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span id="view-status">Пишу код днём, а рэп — ночью</span>
+        </p>
+      </div>
+
+      <ul class="stats">
+        <li class="stats__item"><b>3</b><span>хобби</span></li>
+        <li class="stats__item"><b>24/7</b><span>в деле</span></li>
+        <li class="stats__item"><b>∞</b><span>идей</span></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <!-- ===================== ОСНОВНОЕ СОДЕРЖИМОЕ ===================== -->
+  <main class="main">
+
+    <!-- Секция 1: информация о пользователе -->
+    <section class="card profile-info" aria-labelledby="about-title">
+      <h2 class="card__title" id="about-title">
+        <span class="card__num">01</span> Обо мне
+      </h2>
+
+      <ul class="info-list">
+        <li class="info-list__item">
+          <span class="info-list__icon" aria-hidden="true">📍</span>
+          <span class="info-list__key">Город</span>
+          <span class="info-list__value" id="view-city">Москва</span>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__icon" aria-hidden="true">🎂</span>
+          <span class="info-list__key">Возраст</span>
+          <span class="info-list__value" id="view-age">19</span>
+        </li>
+        <li class="info-list__item info-list__item--column">
+          <div class="info-list__row">
+            <span class="info-list__icon" aria-hidden="true">⚡</span>
+            <span class="info-list__key">Хобби</span>
+          </div>
+          <ul class="tags">
+            <li class="tag tag--code">💻 Программирование</li>
+            <li class="tag tag--photo">📷 Фотография</li>
+            <li class="tag tag--rap">🎤 Пишу рэп под ником Omno</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="bio">
+        <h3 class="bio__title">Пару слов</h3>
+        <p class="bio__text" id="view-bio">Собираю сайты, ловлю кадры на улицах и пишу тексты под бит. Люблю, когда в коде и в куплете всё по делу.</p>
+      </div>
+    </section>
+
+    <!-- Секция 2: форма редактирования профиля -->
+    <section class="card profile-edit" aria-labelledby="edit-title">
+      <h2 class="card__title" id="edit-title">
+        <span class="card__num">02</span> Редактировать профиль
+      </h2>
+
+      <form class="form" id="profile-form" action="#" method="post">
+
+        <div class="form__row">
+          <div class="field">
+            <label class="field__label" for="name">Имя</label>
+            <input class="field__input" type="text" id="name" name="name"
+                   placeholder="Например, Александр" maxlength="30" required>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="status">Статус</label>
+            <input class="field__input" type="text" id="status" name="status"
+                   placeholder="Чем живёшь сейчас?" maxlength="60">
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="field">
+            <label class="field__label" for="city">Город</label>
+            <div class="field__select-wrap">
+              <select class="field__input field__select" id="city" name="city">
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Казань">Казань</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field field--small">
+            <label class="field__label" for="age">Возраст</label>
+            <input class="field__input" type="number" id="age" name="age"
+                   min="1" max="120" placeholder="19">
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field__head">
+            <label class="field__label" for="about">О себе</label>
+            <span class="field__counter" id="about-counter">0 / 200</span>
+          </div>
+          <textarea class="field__input field__textarea" id="about" name="about"
+                    rows="4" maxlength="200" placeholder="Расскажи о себе в паре строк…"></textarea>
+        </div>
+
+        <div class="form__actions">
+          <button class="btn btn--ghost" type="reset">Сбросить</button>
+          <button class="btn btn--primary" type="submit">Сохранить изменения</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===================== ПОДВАЛ ===================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">© 2026 Александр aka Omno. Все права защищены.</p>
+      <nav class="footer__nav" aria-label="Ссылки">
+        <a class="footer__link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="footer__link" href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+        <a class="footer__link" href="#">Наверх ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Уведомление после сохранения -->
+  <div class="toast" id="toast" role="status" aria-live="polite">✓ Профиль обновлён</div>
+
+  <script>
+// Профиль Omno: форма обновляет данные на странице
+// и запоминает их в браузере (localStorage).
+
+const form    = document.getElementById("profile-form");
+const toast   = document.getElementById("toast");
+const about   = document.getElementById("about");
+const counter = document.getElementById("about-counter");
+
+// Где на странице показывается каждое поле формы
+const view = {
+  name:   document.getElementById("view-name"),
+  status: document.getElementById("view-status"),
+  city:   document.getElementById("view-city"),
+  age:    document.getElementById("view-age"),
+  about:  document.getElementById("view-bio"),
+};
+
+const STORAGE_KEY = "omno-profile";
+
+// Исходные значения со страницы — чтобы кнопка «Сбросить» к ним возвращала
+const defaults = {};
+for (const key in view) defaults[key] = view[key].textContent.trim();
+
+// Заполняем форму текущими данными профиля
+function fillForm(data) {
+  for (const key in data) {
+    if (form.elements[key]) form.elements[key].value = data[key];
+  }
+  updateCounter();
+}
+
+// Показываем данные на странице
+function render(data) {
+  for (const key in data) {
+    const el = view[key];
+    if (!el || el.textContent === data[key]) continue;
+    el.textContent = data[key];
+    el.classList.remove("flash");
+    void el.offsetWidth;          // перезапуск анимации
+    el.classList.add("flash");
+  }
+  document.title = data.name + " — Профиль пользователя";
+}
+
+function updateCounter() {
+  counter.textContent = about.value.length + " / " + about.maxLength;
+}
+
+function showToast(text) {
+  toast.textContent = text;
+  toast.classList.add("is-visible");
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => toast.classList.remove("is-visible"), 2400);
+}
+
+function load() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function save(data) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  } catch (e) { /* если хранилище недоступно — просто не сохраняем */ }
+}
+
+// ---------- Старт ----------
+const saved = load();
+const start = saved ? { ...defaults, ...saved } : defaults;
+render(start);
+fillForm(start);
+
+about.addEventListener("input", updateCounter);
+
+// ---------- Сохранение ----------
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); // не перезагружаем страницу
+
+  const data = {
+    name:   form.elements.name.value.trim()   || defaults.name,
+    status: form.elements.status.value.trim() || defaults.status,
+    city:   form.elements.city.value,
+    age:    form.elements.age.value           || defaults.age,
+    about:  form.elements.about.value.trim()  || defaults.about,
+  };
+
+  render(data);
+  save(data);
+  showToast("✓ Профиль обновлён");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// ---------- Сброс ----------
+form.addEventListener("reset", (event) => {
+  event.preventDefault();
+  try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+  render(defaults);
+  fillForm(defaults);
+  showToast("↺ Вернули как было");
+});
+
+</script>
+</body>
+</html>
